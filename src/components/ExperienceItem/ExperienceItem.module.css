@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.role {
+  color: #4b1d3f; /* aubergine */
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  color: #2e2e2e; /* gris proche du noir */
+  font-size: 0.9rem;
+}
+
+.company::after {
+  content: " -";
+}
+
+.period {
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #2e2e2e;
+}

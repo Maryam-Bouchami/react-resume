@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--color-two);
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

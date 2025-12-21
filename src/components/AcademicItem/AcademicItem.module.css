@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.degree {
+  color: #fff; /* aubergine */
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #fff; /* gris proche du noir */
+}
+
+.institute::after {
+  content: " -";
+}
+
+.institute {
+  color: #fff;
+}
+
+.year {
+  white-space: nowrap;
+  color: #fff;
+}

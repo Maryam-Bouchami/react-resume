@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --color-one: #751c61; /* aubergine */
+  --color-two: #1c7530; /* gris proche du noir */
+  --color-three: #eeea0d;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  /* Font sizes */
+  --font-sm: 0.9rem;
+  --font-md: 1rem;
+  --font-lg: 1.4rem;
+}

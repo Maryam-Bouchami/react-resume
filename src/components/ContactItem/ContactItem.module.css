@@ -1,0 +1,16 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 0.9rem;
+  color: #fff;
+}

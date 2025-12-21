@@ -1,0 +1,17 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 16px;
+}
