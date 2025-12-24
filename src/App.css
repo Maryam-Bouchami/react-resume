@@ -1,19 +1,31 @@
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .globalContent {
   display: flex;
   flex-direction: column;
-  /gap: 24px;
-  padding: 24px;
+  padding: 15px;
 }
 
 /* Ligne 1 et ligne 2 */
-.first-Line,
+.first-Line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*gap: 24px;*/
+}
+
 .second-Line {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  /*gap: 24px;*/
+}
+
+.third-Line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   /*gap: 24px;*/
 }
 

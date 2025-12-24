@@ -1,8 +1,12 @@
 :root {
   /* Colors */
-  --color-one: #751c61; /* aubergine */
-  --color-two: #1c7530; /* gris proche du noir */
-  --color-three: #eeea0d;
+  --color-one: #4d0236;
+  --color-two: #1a3f21;
+  --color-three: #bdab0b;
+  --color-four: #c92b38;
+  --color-five: #012a68;
+  --color-six: #b84300;
+  --color-seven: #1d5caf;
 
   /* Spacing */
   --spacing-sm: 8px;

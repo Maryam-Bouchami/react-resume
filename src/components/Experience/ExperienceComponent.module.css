@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: var(--color-three);
+  background-color: var(--color-six);
 }
 
 .title {
   margin-bottom: 20px;
   font-size: 1.4rem;
   font-weight: 700;
+  color: #fff;
+  text-align: center;
 }
 
 .list {

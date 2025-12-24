@@ -11,7 +11,7 @@ const ExperienceItem = ({ data }) => {
         <span className={styles.company}>{company}</span>
         <span className={styles.period}>{period}</span>
       </div>
-      <p className={styles.description}>{description}</p>
+      {/* <p className={styles.description}>{description}</p> */}
     </div>
   );
 };

@@ -57,6 +57,8 @@ function App() {
     { name: "JavaScript", icon: "javascript.png" },
     { name: "Bootstrap", icon: "bootstrap.png" },
     { name: "WordPress", icon: "wordpress.png" },
+    { name: "react", icon: "react.png" },
+
     { name: "Git", icon: "git.png" },
   ];
   //contact list
@@ -74,16 +76,19 @@ function App() {
         <PictureComponent />
         <AboutComponent />
         <Contact contactData={contactData} />
-        <SkillsComponent skillsData={skillsData} />
       </div>
       <div className="second-Line">
         <AcademicComponent academicData={academicData} />
-        <LanguagesComponent />
+
         <ExperienceComponent
           professionalExperiences={professionalExperiences}
         />
+      </div>
 
+      <div className="third-Line">
+        <LanguagesComponent />
         <HobbiesComponent />
+        <SkillsComponent skillsData={skillsData} />
       </div>
     </div>
   );

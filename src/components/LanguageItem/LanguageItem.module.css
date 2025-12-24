@@ -3,14 +3,19 @@
   justify-content: space-between;
   padding: 8px 12px;
   border-radius: 4px;
+  color: #fff;
 }
 
 .language {
   font-weight: 600;
-  color: var(--color-one);
 }
 
 .level {
-  color: var(--color-one);
   font-size: 0.9rem;
+}
+
+.item,
+.language,
+.level {
+  color: #fff;
 }

@@ -1,7 +1,8 @@
 .item {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
+  width: 350px;
+  gap: 12px;
 }
 
 .label {
