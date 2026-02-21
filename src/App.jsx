@@ -60,6 +60,7 @@ function App() {
     { name: "react", icon: "react.png" },
 
     { name: "Git", icon: "git.png" },
+    { name: "Prompt Engineering", icon: "prompt.png" },
   ];
   //contact list
 

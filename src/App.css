@@ -1,13 +1,14 @@
 body {
   padding: 0px;
   margin: 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 .globalContent {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 0px;
 }
 
 /* Ligne 1 et ligne 2 */
