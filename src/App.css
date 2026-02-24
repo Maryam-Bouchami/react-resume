@@ -1,47 +1,95 @@
+/* Reset / base */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
+  background: #f8f9fa; /* optional – light bg */
+  color: #333;
 }
+
 .globalContent {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  min-height: 100vh;
+  padding: 16px; /* breathing room around everything */
+  /* space between main rows   gap: 24px;  */
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* Ligne 1 et ligne 2 */
-.first-Line {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /*gap: 24px;*/
-}
-
-.second-Line {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /*gap: 24px;*/
-}
-
+/* ────────────────────────────────────────
+   Grid rows – desktop default
+───────────────────────────────────────── */
+.first-Line,
+.second-Line,
 .third-Line {
   display: grid;
+  /* space between cards   gap: 20px;*/
+}
+
+/* Row 1: 3 columns (photo + about + contact) */
+.first-Line {
+  grid-template-columns: 1fr 2fr 1fr; /* more natural proportions */
+}
+
+/* Row 2: 2 columns */
+.second-Line {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Row 3: 3 columns */
+.third-Line {
   grid-template-columns: repeat(3, 1fr);
-  /*gap: 24px;*/
 }
 
-/* Tablet */
+/* ────────────────────────────────────────
+   Tablet (≈ 768px – 1023px)
+───────────────────────────────────────── */
 @media (max-width: 1023px) {
-  .first-Line,
-  .second-Line {
-    grid-template-columns: repeat(2, 1fr);
+  .first-Line {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+  }
+
+  .second-Line,
+  .third-Line {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+  }
+
+  /* Optional: make photo + contact take full row on smaller tablets */
+  @media (max-width: 900px) {
+    .first-Line {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
-/* Mobile */
+/* ────────────────────────────────────────
+   Mobile – everything 100% width
+───────────────────────────────────────── */
 @media (max-width: 767px) {
-  .first-Line,
-  .second-Line {
-    grid-template-columns: 1fr;
+  .globalContent {
+    padding: 12px;
+    gap: 20px;
   }
+
+  .first-Line,
+  .second-Line,
+  .third-Line {
+    grid-template-columns: 1fr; /* ← crucial change: 1 column */
+    gap: 16px;
+  }
+
+  /* Optional: reduce internal card padding on very small screens */
+  /* You can target components directly if needed, e.g.: */
+  /*
+  .about-card, .experience-card, .skills-card {
+    padding: 16px !important;
+  }
+  */
 }
